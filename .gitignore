@@ -3,3 +3,13 @@
 !.vimrc
 !.zshrc
 
+!.config/
+
+# Sway
+!.config/sway/
+!.config/sway/*
+
+# Foot Terminal Emulator
+!.config/foot/
+!.config/foot/*
+
