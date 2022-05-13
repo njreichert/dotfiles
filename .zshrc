@@ -102,6 +102,3 @@ source $ZSH/oh-my-zsh.sh
 #
 # ZSH_THEME="agnoster"
 
-# nice output
-neofetch --disable packages shell uptime --ascii_distro ubuntu_small --color_blocks off --gpu_brand on
-
