@@ -29,6 +29,11 @@ output * bg /home/njreichert/Pictures/bigmoon_3840_2160.png fill
 
 font pango:Cascadia Code 12
 
+# Colour stuff.
+client.focused #2a84d2 #2a84d2 #ffffff #4297d8 #1f1f1f
+client.focused_inactive #444444 #444444 #ffffff #4297d8 #1f1f1f
+client.unfocused #1f1f1f #1f1f1f #ffffff #4297d8 #1f1f1f
+
 #
 # Example configuration:
 #
@@ -229,7 +234,8 @@ bar {
 
     colors {
         statusline #ffffff
-        background #323232
+        focused_workspace #2a84d2 #2a84d2 #ffffff
+        background #1f1f1f
         inactive_workspace #32323200 #32323200 #5c5c5c
     }
 }
