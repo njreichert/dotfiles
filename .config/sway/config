@@ -211,6 +211,11 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
+# Brightness Control
+# Requires light (https://github.com/haikarainen/light)
+bindsym XF86MonBrightnessUp exec light -A 10
+bindsym XF86MonBrightnessDown exec light -U 10
+
 #
 # Status Bar:
 #
