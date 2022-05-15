@@ -34,6 +34,9 @@ client.focused #2a84d2 #2a84d2 #ffffff #4297d8 #1f1f1f
 client.focused_inactive #444444 #444444 #ffffff #4297d8 #1f1f1f
 client.unfocused #1f1f1f #1f1f1f #ffffff #4297d8 #1f1f1f
 
+# Padding between windows.
+gaps inner 20
+
 #
 # Example configuration:
 #
