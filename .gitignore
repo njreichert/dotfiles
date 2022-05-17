@@ -13,3 +13,7 @@
 !.config/foot/
 !.config/foot/*
 
+# Swaylock
+!.config/swaylock/
+!.config/swaylock/*
+
