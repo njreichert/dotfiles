@@ -21,12 +21,12 @@ do
                     \"full_text\": \"Brightness: $(light -G)%\"
                 },
                 {
-                    \"name\": \"date_time\",
-                    \"full_text\": \"$(date +%x\ %X)\"
-                },
-                {
                     \"name\": \"volume\",
                     \"full_text\": \"Volume: $(pulsemixer --get-volume | sed -e 's/\s.*$//')%\" 
+                },
+                {
+                    \"name\": \"date_time\",
+                    \"full_text\": \"$(date +%x\ %X)\"
                 }
         ]" # https://unix.stackexchange.com/a/65967 for the above sed prompt.
     sleep 1
