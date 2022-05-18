@@ -14,17 +14,21 @@ do
     echo ",[
                 {
                     \"name\": \"battery\",
-                    \"full_text\": \"$(test -f $battery_path && printf "%s%%" $(cat $battery_path))\"
+                    \"full_text\": \"$(test -f $battery_path && printf "Battery: %s%%" $(cat $battery_path))\"
                 },
                 {
                     \"name\": \"brightness\",
-                    \"full_text\": \"$(light -G)%\"
+                    \"full_text\": \"Brightness: $(light -G)%\"
                 },
                 {
                     \"name\": \"date_time\",
                     \"full_text\": \"$(date +%x\ %X)\"
+                },
+                {
+                    \"name\": \"volume\",
+                    \"full_text\": \"Volume: $(pulsemixer --get-volume | sed -e 's/\s.*$//')%\" 
                 }
-                ]"
+        ]" # https://unix.stackexchange.com/a/65967 for the above sed prompt.
     sleep 1
 done
 
