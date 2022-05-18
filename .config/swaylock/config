@@ -1,4 +1,5 @@
 ignore-empty-password
+disable-caps-lock-text
 
 font=CascadiaCodePL
 
@@ -29,5 +30,8 @@ ring-caps-lock-color=ff8800ff
 ring-ver-color=1cb34bff
 ring-wrong-color=f81118ff
 
-text_wrong_color=00000000
 
+text-wrong-color=00000000
+text-ver-color=00000000
+text-color=00000000
+text-clear-color=00000000
