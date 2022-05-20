@@ -22,7 +22,7 @@ do
                 },
                 {
                     \"name\": \"volume\",
-                    \"full_text\": \"Volume: $(pulsemixer --get-volume | sed -e 's/\s.*$//')%\" 
+                    \"full_text\": \"$(if [ $(pulsemixer --get-mute) = 1 ]; then echo -n "Muted:"; else echo -n "Volume:"; fi) $(pulsemixer --get-volume | sed -e 's/\s.*$//')%\" 
                 },
                 {
                     \"name\": \"date_time\",
