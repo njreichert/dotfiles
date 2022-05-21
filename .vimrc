@@ -10,7 +10,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'ycm-core/YouCompleteMe'
+Plugin 'neoclide/coc.nvim'
 
 Plugin 'vim-airline/vim-airline'
 
@@ -69,3 +69,17 @@ set conceallevel=2
 
 " Use vim terminal, but split vertically.
 map <C-x> :vert rightb terminal<CR>
+
+" use <tab> for trigger completion and navigate to the next complete item
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~ '\s'
+endfunction
+
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+
+if exists('*complete_info')
+  inoremap <silent><expr> <cr> complete_info(['selected'])['selected'] != -1 ? "\<C-y>" : "\<C-g>u\<CR>"
+endif
+
