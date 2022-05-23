@@ -17,3 +17,7 @@
 !.config/swaylock/
 !.config/swaylock/*
 
+# Vim
+~.vim/*
+~.vim/coc-settings.json
+
