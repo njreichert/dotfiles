@@ -37,7 +37,7 @@ set showmatch
 
 set hlsearch
 set noerrorbells
-set number
+set signcolumn=number
 set timeoutlen=10
 
 set conceallevel=2
@@ -57,4 +57,7 @@ inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 if exists('*complete_info')
   inoremap <silent><expr> <cr> complete_info(['selected'])['selected'] != -1 ? "\<C-y>" : "\<C-g>u\<CR>"
 endif
+
+" GoTo code navigation.
+nmap <C-g> <Plug>(coc-definition)
 
