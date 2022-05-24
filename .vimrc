@@ -37,10 +37,14 @@ set showmatch
 
 set hlsearch
 set noerrorbells
-set signcolumn=number
-set timeoutlen=10
 
-set conceallevel=2
+set signcolumn=number
+set number
+
+highlight clear SignColumn
+highlight DiffAdd ctermfg=LightBlue ctermbg=NONE term=bold
+highlight DiffChange ctermfg=LightMagenta ctermbg=NONE term=bold
+highlight DiffDelete ctermfg=LightRed ctermbg=NONE term=bold
 
 " Use vim terminal, but split vertically.
 map <C-x> :vert rightb terminal<CR>
@@ -60,4 +64,15 @@ endif
 
 " GoTo code navigation.
 nmap <C-g> <Plug>(coc-definition)
+
+" Use K to show documentation in preview window.
+nnoremap <silent> K :call ShowDocumentation()<CR>
+
+function! ShowDocumentation()
+  if CocAction('hasProvider', 'hover')
+    call CocActionAsync('doHover')
+  else
+    call feedkeys('K', 'in')
+  endif
+endfunction
 
