@@ -35,6 +35,8 @@ set smartindent
 set showcmd
 set showmatch
 
+set updatetime=100
+
 set hlsearch
 set noerrorbells
 
