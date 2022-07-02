@@ -1,0 +1,43 @@
+! Most of this was translated from ~/.config/foot/foot.ini.
+
+*.foreground: #d6dbe5
+*.background: #1f1f1f
+
+*.color0: #1f1f1f
+*.color1: #f81118
+*.color2: #1cb34b
+*.color3: #ecba0f
+*.color4: #2a84d2
+*.color5: #ff8800
+*.color6: #14bdc9
+*.color7: #d6dbe5
+
+*.color8: #444444
+*.color9: #ee5853
+*.color10: #1dd361
+*.color11: #f7d158
+*.color12: #4297d8
+*.color13: #fda948
+*.color14: #60cde0
+*.color15: #ffffff
+
+URxvt.font: xft:Cascadia Code PL:size=10
+
+! Courtesy of https://unix.stackexchange.com/a/329556
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+
+URxvt.keysym.Control-Meta-c: builtin-string:
+URxvt.keysym.Control-Meta-v: builtin-string:
+
+! And https://unix.stackexchange.com/a/444777
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+! Some things from https://addy-dclxvi.github.io/post/configuring-urxvt/
+! that I thought were nice.
+URxvt.internalBorder: 10
+URxvt.savelline: 4096
+URxvt.scrollBar: false
+
+
