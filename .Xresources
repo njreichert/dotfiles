@@ -21,7 +21,7 @@
 *.color14: #60cde0
 *.color15: #ffffff
 
-URxvt.font: xft:Cascadia Code PL:size=10
+URxvt.font: xft:Cascadia Code PL:size=13
 
 ! Courtesy of https://unix.stackexchange.com/a/329556
 URxvt.keysym.Shift-Control-V: eval:paste_clipboard
