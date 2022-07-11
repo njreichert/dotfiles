@@ -1,0 +1,16 @@
+# Get the weather hourly
+[weather]
+command=curl -Ss 'https://wttr.in?0&T&Q' | cut -c 16- | head -2 | xargs echo
+interval=900
+color=#A4C2F4
+
+# Get battery life
+[battery]
+command=~/.config/i3blocks/battery.sh
+interval=15
+
+# Update time every 5 seconds
+[time]
+command=date +"%x %X"
+interval=5
+
