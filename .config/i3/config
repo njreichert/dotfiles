@@ -15,11 +15,6 @@ set $mod Mod4
 # is used in the bar {} block below.
 font pango:Cascadia Code 14
 
-# i3-Gaps stuff. Disable if there is an issue.
-for_window [class="^.*"] border pixel 1
-gaps inner 10
-gaps outer 10
-
 # Colour stuff.
 client.focused #2a84d2 #2a84d2 #ffffff #4297d8 #1f1f1f
 
