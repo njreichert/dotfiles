@@ -16,6 +16,8 @@ Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 filetype plugin indent on    " required
 
+set backspace=indent,eol,start
+
 set t_Co=16
 highlight Pmenu ctermfg=7 ctermbg=8 guifg=#ffffff guibg=#808080
 
