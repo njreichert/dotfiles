@@ -31,3 +31,6 @@
 !.config/i3blocks
 !.config/i3blocks/*
 
+!.config/rofi/
+!.config/rofi/*
+
