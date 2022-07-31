@@ -23,6 +23,9 @@
 
 URxvt.font: xft:Cascadia Code PL:size=13
 
+Xft.dpi: 180
+rofi.dpi: 180
+
 ! Courtesy of https://unix.stackexchange.com/a/329556
 URxvt.keysym.Shift-Control-V: eval:paste_clipboard
 URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
