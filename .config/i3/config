@@ -26,13 +26,15 @@ client.unfocused #1f1f1f #444444 #ffffff #4297d8 #1f1f1f
 #font pango:DejaVu Sans Mono 8
 
 # 4K is overrated.
-exec xrandr --output eDP-1 --mode 1920x1080
+exec --no-startup-id xrandr --output eDP-1 --mode 1920x1080
 
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i3
+# Wallpaper
+exec --no-startup-id feh --bg-fill /home/njreichert/Pictures/bigmoon_3840_2160.png
 
-exec --no-startup-id picom --experimental-backends
+exec --no-startup-id sleep 10 && picom -b --config ~/.config/picom/picom.conf
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
@@ -189,9 +191,6 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
-
-# Wallpaper
-exec --no-startup-id feh --bg-fill /home/njreichert/Pictures/bigmoon_3840_2160.png
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)

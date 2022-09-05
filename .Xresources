@@ -23,7 +23,6 @@
 
 URxvt.font: xft:Cascadia Code PL:size=13
 
-Xft.dpi: 180
 rofi.dpi: 180
 Xcursor.size: 16
 
