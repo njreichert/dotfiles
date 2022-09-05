@@ -34,3 +34,7 @@
 !.config/rofi/
 !.config/rofi/*
 
+# picom
+!.config/picom/
+!.config/picom/*
+
