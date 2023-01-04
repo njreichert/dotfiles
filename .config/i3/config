@@ -13,10 +13,10 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:Cascadia Code 14
+font pango:Cascadia Code 13
 
 # Colour stuff.
-client.focused #2a84d2 #2a84d2 #ffffff #4297d8 #1f1f1f
+client.focused #2a84d2 #2a84d2 #ffffff #4297d8 #444444
 
 client.focused_inactive #444444 #444444 #ffffff #4297d8 #1f1f1f
 client.unfocused #1f1f1f #444444 #ffffff #4297d8 #1f1f1f
@@ -40,6 +40,13 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
+# Set up touchpad.
+# Natural Scrolling.
+exec --no-startup-id xinput set-prop 10 300 1
+
+# Touchpad speed.
+exec --no-startup-id xinput set-prop 10 309 0.3
+
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
@@ -58,6 +65,7 @@ bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec --no-startup-id rofi -show run
+
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
@@ -186,7 +194,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Wallpaper
-exec --no-startup-id feh --bg-fill /home/njreichert/Pictures/bigmoon_3840_2160.png
+exec --no-startup-id feh --bg-fill /home/njreichert/Pictures/bigmoon_2880_1800.png
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
