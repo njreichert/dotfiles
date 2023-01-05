@@ -37,3 +37,4 @@
 !.config/picom/
 !.config/picom/*
 
+!.xsessionrc

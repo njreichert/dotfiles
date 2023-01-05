@@ -193,8 +193,11 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+# V-Sync
+exec picom --experimental-backends --config $HOME/.config/picom/picom.conf
+
 # Wallpaper
-exec --no-startup-id feh --bg-fill /home/njreichert/Pictures/bigmoon_2880_1800.png
+exec --no-startup-id feh --bg-fill /home/njreichert/Pictures/bigmoon_1920_1080.png
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
