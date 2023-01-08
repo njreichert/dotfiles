@@ -38,3 +38,7 @@
 !.config/picom/*
 
 !.xsessionrc
+
+# Polybar
+!.config/Polybar/
+!.config/Polybar/*
