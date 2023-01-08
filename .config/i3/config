@@ -24,8 +24,8 @@ client.unfocused #1f1f1f #444444 #ffffff #4297d8 #1f1f1f
 # Remove title bars.
 for_window [class="^.*"] border pixel 1
 
+# Available on i3 4.22 and above.
 gaps inner 10px
-
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -48,10 +48,10 @@ exec --no-startup-id nm-applet
 
 # Set up touchpad.
 # Natural Scrolling.
-exec xinput set-prop 12 333 1
+exec --no-startup-id xinput set-prop "Synaptics TM3276-022" "libinput Natural Scrolling Enabled" 1
 
 # Touchpad speed.
-exec --no-startup-id xinput set-prop 10 309 0.3
+exec --no-startup-id xinput set-prop "Synaptics TM3276-022" "libinput Accel Speed" 0.1
 
 # Use pactl to adjust volume in PulseAudio.
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status

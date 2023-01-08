@@ -40,5 +40,5 @@
 !.xsessionrc
 
 # Polybar
-!.config/Polybar/
-!.config/Polybar/*
+!.config/polybar/
+!.config/polybar/*
