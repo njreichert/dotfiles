@@ -18,14 +18,15 @@ set $term foot
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu dmenu_path | dmenu | xargs swaymsg exec --
+# set $menu dmenu_path | dmenu | xargs swaymsg exec --
+set $menu rofi -show drun
 
 include /etc/sway/config-vars.d/*
 
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /home/njreichert/Pictures/bigmoon_3840_2160.png fill
+output * bg /home/njreichert/Pictures/bigmoon_1920_1080.png fill
 
 font pango:Cascadia Code 13
 
